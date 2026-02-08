@@ -6,7 +6,7 @@ const TEAMS = [
   {id:"predators",name:"Vatican City Predators",file:"assets/Predators.PNG"},
   {id:"kodiaks",name:"Anchorage Kodiaks",file:"assets/Kodiaks.PNG"},
   {id:"cyclones",name:"San Juan Cyclones",file:"assets/Cyclones.PNG"},
-  {id:"smog",name:"Smog Hogs",file:"assets/SmogHogs.PNG"},
+  {id:"smog",name:"Los Angeles Smog Hogs",file:"assets/SmogHogs.PNG"},
   {id:"sa",name:"San Antonio Churrocabras",file:"assets/SanAntonio.png"},
   {id:"inferno",name:"Tulsa Inferno",file:"assets/TulsaInferno.PNG"},
   {id:"qkiwis",name:"Queenstown Kiwis",file:"assets/Qkiwis.png"},
