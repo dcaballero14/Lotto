@@ -1,0 +1,66 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2026 Dynasty Draft Lottery</title>
+  <meta name="description" content="Tap each team logo to reveal the official dynasty draft lottery order." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <div>
+        <h1>2026 Dynasty Draft Lottery</h1>
+        <p class="sub">Tap each logo to reveal the official order</p>
+      </div>
+
+      <div class="top-actions">
+        <button id="muteBtn" class="btn btn-ghost" type="button" aria-pressed="false" title="Toggle sound">
+          🔊 Sound: On
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="grid-panel" aria-label="Team logos">
+      <div class="panel-head">
+        <h2>Teams</h2>
+        <p class="hint">Click a logo to lock in the next pick.</p>
+      </div>
+
+      <div id="teamGrid" class="team-grid" role="list"></div>
+    </section>
+
+    <aside class="order-panel" aria-label="Lottery order">
+      <div class="panel-head order-head">
+        <div>
+          <h2>Lottery Order</h2>
+          <p class="hint">Pick #1 → Pick #12</p>
+        </div>
+        <span id="completeBadge" class="badge" hidden>Complete ✅</span>
+      </div>
+
+      <div class="controls" aria-label="Controls">
+        <button id="undoBtn" class="btn" type="button">Undo</button>
+        <button id="resetBtn" class="btn btn-ghost" type="button">Reset</button>
+        <button id="randomBtn" class="btn" type="button">Randomize Remaining</button>
+        <button id="copyBtn" class="btn btn-ghost" type="button">Copy Results</button>
+      </div>
+
+      <ol id="orderList" class="order-list"></ol>
+
+      <p id="toast" class="toast" role="status" aria-live="polite" hidden></p>
+    </aside>
+  </main>
+
+  <!-- Tiny inline sound (no external file). Feel free to replace with /assets/pick.mp3. -->
+  <audio id="pickSound" preload="auto">
+    <source src="data:audio/wav;base64,UklGRmQAAABXQVZFZm10IBAAAAABAAEAESsAACJWAAACABAAZGF0YVAAAAAAAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" type="audio/wav">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
